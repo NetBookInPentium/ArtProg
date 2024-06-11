@@ -1,0 +1,11 @@
+D:\Susny\ArtProg\ArtProg\ArtProg\bin\Debug\ArtProg.exe.config
+D:\Susny\ArtProg\ArtProg\ArtProg\bin\Debug\ArtProg.exe
+D:\Susny\ArtProg\ArtProg\ArtProg\bin\Debug\ArtProg.pdb
+D:\Susny\ArtProg\ArtProg\ArtProg\obj\Debug\ArtProg.csproj.AssemblyReference.cache
+D:\Susny\ArtProg\ArtProg\ArtProg\obj\Debug\ArtProg.Form1.resources
+D:\Susny\ArtProg\ArtProg\ArtProg\obj\Debug\ArtProg.Properties.Resources.resources
+D:\Susny\ArtProg\ArtProg\ArtProg\obj\Debug\ArtProg.csproj.GenerateResource.cache
+D:\Susny\ArtProg\ArtProg\ArtProg\obj\Debug\ArtProg.csproj.CoreCompileInputs.cache
+D:\Susny\ArtProg\ArtProg\ArtProg\obj\Debug\ArtProg.exe
+D:\Susny\ArtProg\ArtProg\ArtProg\obj\Debug\ArtProg.pdb
+D:\Susny\ArtProg\ArtProg\ArtProg\obj\Debug\ArtProg.Menu.resources
