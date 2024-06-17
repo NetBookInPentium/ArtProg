@@ -19,27 +19,36 @@ namespace ArtProg
         public Menu()
         {
             InitializeComponent();
-            InitializeConboBox();
+            InitializeComboBox();
             textBox8.Text = thisDay.ToString("d");
         }
-        public void InitializeConboBox()
+        public void InitializeComboBox()
         {
             DataSet dataSet = Call_DB.Request("SELECT * FROM Clients");
             for (int i = 0; i < dataSet.Tables[0].Rows.Count; i++)
             {
                 comboBox2.Items.Add(dataSet.Tables[0].Rows[i][0]);
+                comboBox7.Items.Add(dataSet.Tables[0].Rows[i][1]);
             }
             dataSet = Call_DB.Request("SELECT * FROM Designers");
             for (int i = 0; i < dataSet.Tables[0].Rows.Count; i++)
             {
                 comboBox3.Items.Add(dataSet.Tables[0].Rows[i][0]);
+                comboBox6.Items.Add(dataSet.Tables[0].Rows[i][1]);
             }
             dataSet = Call_DB.Request("SELECT * FROM Companys");
             for (int i = 0; i < dataSet.Tables[0].Rows.Count; i++)
             {
                 comboBox4.Items.Add(dataSet.Tables[0].Rows[i][0]);
+                comboBox5.Items.Add(dataSet.Tables[0].Rows[i][1]);
             }
-            
+            dataSet = Call_DB.Request("SELECT * FROM ArtObject");
+            for (int i = 0; i < dataSet.Tables[0].Rows.Count; i++)
+            {
+                comboBox8.Items.Add(dataSet.Tables[0].Rows[i][1]);
+            }
+
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -157,6 +166,89 @@ namespace ArtProg
                 MessageBox.Show("Некоторые поля оставлены паустыми!");
             }
 
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            if (comboBox7.Text.Length > 0)
+            {
+                Call_DB.Open();
+                Call_DB.Request($"DELETE FROM Clients WHERE surnames = '{comboBox7.Text}'");
+                Call_DB.Close();
+                Select_table("Clients");
+                textBox11.Text = "";
+                comboBox7.Text = "";
+            }
+            else
+            {
+                MessageBox.Show("Некоторые поля оставлены паустыми!");
+            }
+        }
+
+        private void comboBox7_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DataSet dataSet = Call_DB.Request($"SELECT * FROM Clients WHERE surnames = '{comboBox7.Text}'");
+            textBox11.Text = $"{dataSet.Tables[0].Rows[0][2]} {dataSet.Tables[0].Rows[0][3]}";
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            if (comboBox5.Text.Length > 0)
+            {
+                Call_DB.Open();
+                Call_DB.Request($"DELETE FROM Companys WHERE namess = '{comboBox5.Text}'");
+                Call_DB.Close();
+                Select_table("Companys");
+                textBox10.Text = "";
+                comboBox5.Text = "";
+            }
+            else
+            {
+                MessageBox.Show("Некоторые поля оставлены паустыми!");
+            }
+        }
+
+        private void comboBox5_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DataSet dataSet = Call_DB.Request($"SELECT * FROM Companys WHERE namess = '{comboBox5.Text}'");
+            textBox10.Text = $"{dataSet.Tables[0].Rows[0][2]}";
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            if (comboBox6.Text.Length > 0)
+            {
+                Call_DB.Open();
+                Call_DB.Request($"DELETE FROM Designers WHERE surnames = '{comboBox6.Text}'");
+                Call_DB.Close();
+                Select_table("Designers");
+                textBox12.Text = "";
+                comboBox6.Text = "";
+            }
+            else
+            {
+                MessageBox.Show("Некоторые поля оставлены паустыми!");
+            }
+        }
+
+        private void comboBox6_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DataSet dataSet = Call_DB.Request($"SELECT * FROM Designers WHERE surnames = '{comboBox6.Text}'");
+            textBox12.Text = $"{dataSet.Tables[0].Rows[0][2]} {dataSet.Tables[0].Rows[0][3]}";
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            Call_DB.Open();
+            Call_DB.Request($"DELETE FROM ArtObject WHERE namess = '{comboBox8.Text}'");
+            Call_DB.Close();
+            Select_table("ArtObject");
+            comboBox8.Text = "";
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
