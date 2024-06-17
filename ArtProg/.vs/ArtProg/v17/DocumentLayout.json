@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{43408263-8B78-46F5-B9AE-85C22985A14B}|ArtProg\\ArtProg.csproj|solutionrelative:artprog\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{43408263-8B78-46F5-B9AE-85C22985A14B}|ArtProg\\ArtProg.csproj|d:\\susny\\artprog\\artprog\\artprog\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{43408263-8B78-46F5-B9AE-85C22985A14B}|ArtProg\\ArtProg.csproj|D:\\Susny\\ArtProg\\ArtProg\\artprog\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{43408263-8B78-46F5-B9AE-85C22985A14B}|ArtProg\\ArtProg.csproj|solutionrelative:artprog\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -40,7 +40,7 @@
               "RelativeDocumentMoniker": "ArtProg\\Menu.cs",
               "ToolTip": "D:\\Susny\\ArtProg\\ArtProg\\ArtProg\\Menu.cs",
               "RelativeToolTip": "ArtProg\\Menu.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAuwDQAAAAgAAAA",
+              "ViewState": "AQIAAHsAAAAAAAAAAAAAAKAAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-14T10:00:08.432Z",
               "EditorCaption": ""
@@ -65,7 +65,7 @@
               "RelativeDocumentMoniker": "ArtProg\\Call_DB.cs",
               "ToolTip": "D:\\Susny\\ArtProg\\ArtProg\\ArtProg\\Call_DB.cs",
               "RelativeToolTip": "ArtProg\\Call_DB.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAowDEAAAAUAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEkAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-11T22:47:41.961Z",
               "EditorCaption": ""
@@ -80,8 +80,7 @@
               "RelativeToolTip": "ArtProg\\Form1.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-11T18:22:14.101Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-11T18:22:14.101Z"
             },
             {
               "$type": "Document",
@@ -92,8 +91,7 @@
               "ToolTip": "D:\\Susny\\ArtProg\\ArtProg\\ArtProg\\Form1.cs [Design]",
               "RelativeToolTip": "ArtProg\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-11T18:20:00.854Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-06-11T18:20:00.854Z"
             }
           ]
         }
